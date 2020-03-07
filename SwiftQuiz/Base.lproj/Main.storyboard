@@ -71,7 +71,7 @@
                                 <rect key="frame" x="0.0" y="442" width="375" height="181"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qx-OC-Ntc">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="3qx-OC-Ntc">
                                         <rect key="frame" x="0.0" y="1" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -84,7 +84,7 @@
                                             <action selector="selectAnswer:" destination="2k2-fk-xTN" eventType="touchUpInside" id="FYt-BA-Nrs"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSG-LH-2MX">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GSG-LH-2MX">
                                         <rect key="frame" x="0.0" y="46" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,7 +97,7 @@
                                             <action selector="selectAnswer:" destination="2k2-fk-xTN" eventType="touchUpInside" id="Jc1-bT-a53"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50V-vx-jsd">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="50V-vx-jsd">
                                         <rect key="frame" x="0.0" y="91" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -110,7 +110,7 @@
                                             <action selector="selectAnswer:" destination="2k2-fk-xTN" eventType="touchUpInside" id="ONZ-b3-p9b"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DX-WQ-wJx">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9DX-WQ-wJx">
                                         <rect key="frame" x="0.0" y="136" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -144,7 +144,7 @@
                         <outletCollection property="buttonAnswers" destination="GSG-LH-2MX" collectionClass="NSMutableArray" id="AlR-M8-r7n"/>
                         <outletCollection property="buttonAnswers" destination="50V-vx-jsd" collectionClass="NSMutableArray" id="n2T-co-MHa"/>
                         <outletCollection property="buttonAnswers" destination="9DX-WQ-wJx" collectionClass="NSMutableArray" id="s77-ck-CsW"/>
-                        <segue destination="mrM-DJ-KmN" kind="show" id="CZJ-yw-fws"/>
+                        <segue destination="mrM-DJ-KmN" kind="show" identifier="resultSegue" id="CZJ-yw-fws"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuJ-lc-qbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -210,7 +210,7 @@
                         <viewLayoutGuide key="safeArea" id="43Z-T3-fdi"/>
                     </view>
                     <connections>
-                        <outlet property="labelAnswered" destination="Ufo-GH-qsS" id="cBY-H7-RV3"/>
+                        <outlet property="labelAnswered" destination="WJ4-NX-MtA" id="rSV-QV-MnP"/>
                         <outlet property="labelCorrect" destination="bLm-FP-C8O" id="nNL-dN-nKy"/>
                         <outlet property="labelScore" destination="jMM-VH-kVF" id="obm-zO-cyl"/>
                         <outlet property="labelWrong" destination="PsD-ll-WK4" id="Eqm-iA-HCa"/>

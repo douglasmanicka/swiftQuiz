@@ -9,5 +9,21 @@
 import Foundation
 
 class Quiz {
+    
+    let questions: String
+    let options: [String]
+    private let correctedAnswers: String
+    
+    init(questions: String, options: [String], correctedAnswers: String) {
+        self.questions = questions
+        self.options =  options
+        self.correctedAnswers =  correctedAnswers
+    }
+    
+    func validateOption(_ index: Int) -> Bool{
+        let answer = options[index]
+        return answer == correctedAnswers
+        
+    }
 
 }
